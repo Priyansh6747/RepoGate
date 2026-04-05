@@ -20,7 +20,7 @@ async def lister(username: str = Query(..., description="GitHub username")):
         return f"""
         <div class="card">
             <div class="card-top">
-                <a class="repo-name" href="{repo['url']}" target="_blank">{repo['name']}</a>
+                <a class="repo-name" href="/{repo['name']}" target="_blank">{repo['name']}</a>
                 <span class="vis-badge">{repo['visibility']}</span>
             </div>
             <p class="desc">{desc}</p>
